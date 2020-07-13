@@ -42,7 +42,6 @@ function FileInput() {
       setDrag(false);
       if (event.dataTransfer.files) {
         addFiles(Array.from(event.dataTransfer.files));
-        event.dataTransfer.clearData();
         setCount(0);
       }
     }
